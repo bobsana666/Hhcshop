@@ -159,3 +159,133 @@ Stack trace:
 [01-Sep-2023 02:54:31 Europe/Sofia] PHP Fatal error:  Cannot declare class Longman\TelegramBot\Commands\SystemCommands\HomeCommand, because the name is already in use in /home/hhceshop/public_html/telegramBot/Commands/HhcCommand.php on line 9
 [01-Sep-2023 02:54:36 Europe/Sofia] PHP Fatal error:  Cannot declare class Longman\TelegramBot\Commands\SystemCommands\HomeCommand, because the name is already in use in /home/hhceshop/public_html/telegramBot/Commands/HhcCommand.php on line 9
 [01-Sep-2023 08:54:27 Europe/Sofia] PHP Fatal error:  Cannot declare class Longman\TelegramBot\Commands\SystemCommands\HomeCommand, because the name is already in use in /home/hhceshop/public_html/telegramBot/Commands/HhcCommand.php on line 9
+[03-Sep-2023 01:16:05 Europe/Sofia] PHP Warning:  require_once(/home/hhceshop/public_html/hhcShop/telegramBot/vendor/autoload.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/unset.php on line 18
+[03-Sep-2023 01:16:05 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/vendor/autoload.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/unset.php:18
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/unset.php on line 18
+[03-Sep-2023 01:20:53 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/unset.php on line 22
+[03-Sep-2023 01:20:53 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/unset.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/unset.php on line 22
+[03-Sep-2023 01:26:54 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/unset.php on line 22
+[03-Sep-2023 01:26:54 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/unset.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/unset.php on line 22
+[03-Sep-2023 01:28:29 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 22
+[03-Sep-2023 01:28:29 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/set.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 22
+[03-Sep-2023 01:31:28 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 22
+[03-Sep-2023 01:31:28 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/set.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 22
+[03-Sep-2023 01:34:58 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:34:58 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/set.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:36:22 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:36:22 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/set.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:36:23 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:36:23 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/set.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:36:24 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:36:24 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/set.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:36:24 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:36:24 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/set.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:36:24 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:36:24 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/set.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:36:24 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:36:24 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/set.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:36:25 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:36:25 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/set.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:36:25 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:36:25 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/set.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:36:25 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:36:25 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/set.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:36:26 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:36:26 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/set.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:36:26 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:36:26 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/set.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:37:07 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:37:07 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/set.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:38:36 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:38:36 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/set.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:42:07 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:42:07 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/set.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:42:08 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:42:08 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/set.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:42:09 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:42:09 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/set.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:45:34 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:45:34 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/set.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:45:35 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:45:35 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/set.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:45:36 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:45:36 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/set.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:45:44 Europe/Sofia] PHP Warning:  require(/home/hhceshop/public_html/hhcShop/telegramBot/config.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
+[03-Sep-2023 01:45:44 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/hhcShop/telegramBot/config.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/hhcShop/telegramBot/set.php:23
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/hhcShop/telegramBot/set.php on line 23
