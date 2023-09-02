@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Shopping Cart</title>
+    <style>
+        /* Basic CSS styling for demonstration purposes */
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .product {
+            border: 1px solid #ccc;
+            margin: 10px;
+            padding: 10px;
+        }
+        .cart {
+            border: 1px solid #333;
+            padding: 10px;
+            background-color: #f9f9f9;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Simple Shopping Cart</h1>
+        <div class="product">
+            <h2>Product 1</h2>
+            <p>Price: $10.00</p>
+            <button onclick="addToCart('Product 1', 10.00)">Add to Cart</button>
+        </div>
+        <div class="product">
+            <h2>Product 2</h2>
+            <p>Price: $15.00</p>
+            <button onclick="addToCart('Product 2', 15.00)">Add to Cart</button>
+        </div>
+        <div class="cart">
+            <h2>Cart</h2>
+            <ul id="cart-list">
+                <!-- Cart items will be added here dynamically -->
+            </ul>
+            <p>Total: $<span id="cart-total">0.00</span></p>
+        </div>
+    </div>
+
+    <script>
+        // JavaScript for adding items to the cart
+        let cart = [];
+        let cartTotal = 0;
+
+        function addToCart(productName, price) {
+            cart.push({ name: productName, price: price });
+            cartTotal += price;
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            const cartList = document.getElementById("cart-list");
+            const cartTotalElement = document.getElementById("cart-total");
+            
+            // Clear existing cart items
+            cartList.innerHTML = "";
+            
+            // Add items to the cart list
+            cart.forEach(item => {
+                const listItem = document.createElement("li");
+                listItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
+                cartList.appendChild(listItem);
+            });
+            
+            // Update the cart total
+            cartTotalElement.textContent = cartTotal.toFixed(2);
+        }
+    </script>
+</body>
+</html>

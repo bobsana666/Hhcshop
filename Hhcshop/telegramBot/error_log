@@ -1,0 +1,161 @@
+[31-Aug-2023 18:50:42 Europe/Sofia] PHP Warning:  Array to string conversion in /home/hhceshop/public_html/telegramBot/getUpdatesCLI.php on line 38
+[31-Aug-2023 18:50:48 Europe/Sofia] PHP Warning:  Array to string conversion in /home/hhceshop/public_html/telegramBot/getUpdatesCLI.php on line 38
+[31-Aug-2023 18:51:04 Europe/Sofia] PHP Warning:  Undefined array key 0 in /home/hhceshop/public_html/telegramBot/getUpdatesCLI.php on line 38
+[31-Aug-2023 22:35:26 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:68
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 68
+[31-Aug-2023 22:36:04 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:68
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 68
+[31-Aug-2023 22:36:37 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:68
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 68
+[31-Aug-2023 22:36:40 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:68
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 68
+[31-Aug-2023 22:36:44 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:68
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 68
+[31-Aug-2023 22:57:18 Europe/Sofia] PHP Warning:  require_once(/home/hhceshop/public_html/telegramBotgetUpdatesCLI.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/telegramBot/hook.php on line 22
+[31-Aug-2023 22:57:18 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/telegramBotgetUpdatesCLI.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/telegramBot/hook.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 22
+[31-Aug-2023 22:57:23 Europe/Sofia] PHP Warning:  require_once(/home/hhceshop/public_html/telegramBotgetUpdatesCLI.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/telegramBot/hook.php on line 22
+[31-Aug-2023 22:57:23 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/telegramBotgetUpdatesCLI.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/telegramBot/hook.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 22
+[31-Aug-2023 22:59:20 Europe/Sofia] PHP Warning:  require_once(/home/hhceshop/public_html/telegramBotgetUpdatesCLI.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/telegramBot/hook.php on line 22
+[31-Aug-2023 22:59:20 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/telegramBotgetUpdatesCLI.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/telegramBot/hook.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 22
+[31-Aug-2023 22:59:21 Europe/Sofia] PHP Warning:  require_once(/home/hhceshop/public_html/telegramBotgetUpdatesCLI.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/telegramBot/hook.php on line 22
+[31-Aug-2023 22:59:21 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/telegramBotgetUpdatesCLI.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/telegramBot/hook.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 22
+[31-Aug-2023 22:59:24 Europe/Sofia] PHP Warning:  require_once(/home/hhceshop/public_html/telegramBotgetUpdatesCLI.php): Failed to open stream: No such file or directory in /home/hhceshop/public_html/telegramBot/hook.php on line 22
+[31-Aug-2023 22:59:24 Europe/Sofia] PHP Fatal error:  Uncaught Error: Failed opening required '/home/hhceshop/public_html/telegramBotgetUpdatesCLI.php' (include_path='.:/opt/cpanel/ea-php82/root/usr/share/pear') in /home/hhceshop/public_html/telegramBot/hook.php:22
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 22
+[31-Aug-2023 23:00:41 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:69
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 69
+[31-Aug-2023 23:02:06 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:69
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 69
+[31-Aug-2023 23:02:43 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:69
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 69
+[31-Aug-2023 23:04:14 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 70
+[31-Aug-2023 23:04:33 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 70
+[31-Aug-2023 23:14:44 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 70
+[31-Aug-2023 23:14:50 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 70
+[31-Aug-2023 23:14:55 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 70
+[31-Aug-2023 23:15:32 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 70
+[31-Aug-2023 23:15:47 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 70
+[31-Aug-2023 23:15:56 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 70
+[31-Aug-2023 23:17:21 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 70
+[31-Aug-2023 23:17:24 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 70
+[31-Aug-2023 23:17:31 Europe/Sofia] PHP Warning:  Undefined array key 0 in /home/hhceshop/public_html/telegramBot/Commands/Config/DateCommand.php on line 201
+[31-Aug-2023 23:17:31 Europe/Sofia] PHP Warning:  Undefined array key 1 in /home/hhceshop/public_html/telegramBot/Commands/Config/DateCommand.php on line 201
+[31-Aug-2023 23:17:32 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 70
+[31-Aug-2023 23:18:02 Europe/Sofia] PHP Warning:  Undefined array key 0 in /home/hhceshop/public_html/telegramBot/Commands/Config/DateCommand.php on line 201
+[31-Aug-2023 23:18:02 Europe/Sofia] PHP Warning:  Undefined array key 1 in /home/hhceshop/public_html/telegramBot/Commands/Config/DateCommand.php on line 201
+[31-Aug-2023 23:18:02 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 70
+[31-Aug-2023 23:28:32 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 70
+[31-Aug-2023 23:28:35 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 70
+[31-Aug-2023 23:28:39 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 70
+[31-Aug-2023 23:28:45 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 70
+[31-Aug-2023 23:28:50 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 70
+[31-Aug-2023 23:29:02 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 70
+[31-Aug-2023 23:29:07 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 70
+[31-Aug-2023 23:29:15 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 70
+[31-Aug-2023 23:29:28 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 70
+[31-Aug-2023 23:29:47 Europe/Sofia] PHP Fatal error:  Uncaught Error: Using $this when not in object context in /home/hhceshop/public_html/telegramBot/hook.php:70
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/hook.php on line 70
+[01-Sep-2023 00:41:32 Europe/Sofia] PHP Fatal error:  Uncaught Error: Class "TelegramBot\TelegramBotManager\BotManager" not found in /home/hhceshop/public_html/telegramBot/manager.php:28
+Stack trace:
+#0 {main}
+  thrown in /home/hhceshop/public_html/telegramBot/manager.php on line 28
+[01-Sep-2023 02:53:16 Europe/Sofia] PHP Fatal error:  Cannot declare class Longman\TelegramBot\Commands\SystemCommands\HomeCommand, because the name is already in use in /home/hhceshop/public_html/telegramBot/Commands/HhcCommand.php on line 9
+[01-Sep-2023 02:53:22 Europe/Sofia] PHP Fatal error:  Cannot declare class Longman\TelegramBot\Commands\SystemCommands\HomeCommand, because the name is already in use in /home/hhceshop/public_html/telegramBot/Commands/HhcCommand.php on line 9
+[01-Sep-2023 02:54:31 Europe/Sofia] PHP Fatal error:  Cannot declare class Longman\TelegramBot\Commands\SystemCommands\HomeCommand, because the name is already in use in /home/hhceshop/public_html/telegramBot/Commands/HhcCommand.php on line 9
+[01-Sep-2023 02:54:36 Europe/Sofia] PHP Fatal error:  Cannot declare class Longman\TelegramBot\Commands\SystemCommands\HomeCommand, because the name is already in use in /home/hhceshop/public_html/telegramBot/Commands/HhcCommand.php on line 9
+[01-Sep-2023 08:54:27 Europe/Sofia] PHP Fatal error:  Cannot declare class Longman\TelegramBot\Commands\SystemCommands\HomeCommand, because the name is already in use in /home/hhceshop/public_html/telegramBot/Commands/HhcCommand.php on line 9
