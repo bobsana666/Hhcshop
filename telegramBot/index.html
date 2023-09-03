@@ -3,79 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Shopping Cart</title>
-    <style>
-        /* Basic CSS styling for demonstration purposes */
-        body {
-            font-family: Arial, sans-serif;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        .product {
-            border: 1px solid #ccc;
-            margin: 10px;
-            padding: 10px;
-        }
-        .cart {
-            border: 1px solid #333;
-            padding: 10px;
-            background-color: #f9f9f9;
-        }
-    </style>
+    <title>Hello Circles</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
 </head>
 <body>
-    <div class="container">
-        <h1>Simple Shopping Cart</h1>
-        <div class="product">
-            <h2>Product 1</h2>
-            <p>Price: $10.00</p>
-            <button onclick="addToCart('Product 1', 10.00)">Add to Cart</button>
+    <div class="ag-smoke-block">
+        <div class="circle-container">
+            <div class="circle" id="ak47"><a>AK-47</a></div>
+            <div class="circle" id="og"><a>OG-KUSH</a></div>
+            <div class="circle" id="strawberry"><a>Ягода</a></div>
+            <div class="circle" id="passion"><a>Маракуя</a></div>
+            <div class="circle" id="choko"><a>Шоко</a></div>
+            <div class="circle" id="cherry"><a>Череша</a></div>
+            <div class="circle" id="forest"><a>Горски Плод</a></div>
+            <div class="circle" id="mango"><a>Манго</a></div>
+            <div class="circle" id="grape"><a>Грозде</a></div>
+            <div class="circle" id="watermelon"><a>Диня</a></div>
         </div>
-        <div class="product">
-            <h2>Product 2</h2>
-            <p>Price: $15.00</p>
-            <button onclick="addToCart('Product 2', 15.00)">Add to Cart</button>
-        </div>
-        <div class="cart">
-            <h2>Cart</h2>
-            <ul id="cart-list">
-                <!-- Cart items will be added here dynamically -->
-            </ul>
-            <p>Total: $<span id="cart-total">0.00</span></p>
-        </div>
-    </div>
-
+        <picture>
+          <source srcset="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-images/images/smoke-pink.webp" type="image/webp">
+          <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-images/images/smoke-pink.png" alt="smoke-pink" class="ag-smoke_img ag-smoke_img__left" width="1920" height="1080">
+        </picture>
+        
+        <picture>
+          <source srcset="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-images/images/smoke-blue.webp" type="image/webp">
+          <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-images/images/smoke-blue.png" alt="smoke-blue" class="ag-smoke_img ag-smoke_img__right" width="1920" height="1080">
+        </picture>
+      </div>
     <script>
-        // JavaScript for adding items to the cart
-        let cart = [];
-        let cartTotal = 0;
+        $( document ).ready(function() {
+    console.log( "ready!" );
+    const images = document.getElementsByClassName("circle");
+    counter = 500;
+for (let image of images) {
+    
+    setTimeout(
+        function(){
+            image.style.transition = "opacity 1s";
+            image.style.opacity = "1";
+        },counter
+    );
+    counter = counter + 200;
+}
+});
 
-        function addToCart(productName, price) {
-            cart.push({ name: productName, price: price });
-            cartTotal += price;
-            updateCartUI();
-        }
-
-        function updateCartUI() {
-            const cartList = document.getElementById("cart-list");
-            const cartTotalElement = document.getElementById("cart-total");
-            
-            // Clear existing cart items
-            cartList.innerHTML = "";
-            
-            // Add items to the cart list
-            cart.forEach(item => {
-                const listItem = document.createElement("li");
-                listItem.textContent = `${item.name} - $${item.price.toFixed(2)}`;
-                cartList.appendChild(listItem);
-            });
-            
-            // Update the cart total
-            cartTotalElement.textContent = cartTotal.toFixed(2);
-        }
     </script>
 </body>
 </html>
