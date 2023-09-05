@@ -263,7 +263,7 @@ a{
     text-align: center;
     user-select: none;
     margin-left: -30px;
-    font-family: 'Comic Sans MS', cursive;
+    font-family: 'Comic Sans MS';
 }
 img {
   user-select: none;
