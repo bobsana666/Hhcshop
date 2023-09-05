@@ -248,9 +248,11 @@ body {
 .circle-container {
     display: grid;
     grid-template-columns: repeat(3, 50px); /* 3 columns  */
-    grid-column-gap: 80px;
+    grid-column-gap: 70px;
     margin-top: 60px;
     grid-row-gap: 40px;
+    padding: 70px;
+    margin: 20px;
 
 }
 .counter-container {
