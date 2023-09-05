@@ -10,16 +10,20 @@
 </head>
 <body>
     <div class="ag-smoke-block">
-        <picture>
+        <div class="container">
+            <span class="text1">welcome in</span>
+            <span class="text2">hhcstore</span>
+          </div>
+        <picture class="hide">
             <source srcset="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-images/images/smoke-pink.webp" type="image/webp">
             <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-images/images/smoke-pink.png" alt="smoke-pink" class="ag-smoke_img ag-smoke_img__left" width="1920" height="1080">
-          </picture>
+        </picture>
           
-          <picture>
+        <picture class="hide">
             <source srcset="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-images/images/smoke-blue.webp" type="image/webp">
             <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-images/images/smoke-blue.png" alt="smoke-blue" class="ag-smoke_img ag-smoke_img__right" width="1920" height="1080">
-          </picture>
-          <div class="stepper-wrapper">
+        </picture>
+        <div class="stepper-wrapper hide">
             <div class="stepper-item completed">
               <div class="step-counter">1</div>
               <div class="step-name">First</div>
@@ -36,8 +40,8 @@
               <div class="step-counter">4</div>
               <div class="step-name">Forth</div>
             </div>
-          </div>
-        <div class="circle-container">
+        </div>
+        <div class="circle-container hide">
             <div class="circle" id="ak47">
                 <div class="counter-container">
                     <span class="cart-item">0</span>
@@ -99,12 +103,12 @@
                 <a>Диня</a>
             </div>
         </div>
-        <picture>
+        <picture class="hide">
           <source srcset="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-images/images/smoke-pink.webp" type="image/webp">
           <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-images/images/smoke-pink.png" alt="smoke-pink" class="ag-smoke_img ag-smoke_img__left" width="1920" height="1080">
         </picture>
         
-        <picture>
+        <picture class="hide">
           <source srcset="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-images/images/smoke-blue.webp" type="image/webp">
           <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-images/images/smoke-blue.png" alt="smoke-blue" class="ag-smoke_img ag-smoke_img__right" width="1920" height="1080">
         </picture>
@@ -115,18 +119,27 @@
         counter = 500;
         setTimeout(
                 function(){
-                    $(".ag-smoke_img").css("z-index", '0');
-                },2600
+                    $(".container").addClass("hide");
+                    $("picture").removeClass("hide");
+                    $("picture").addClass("show");
+                },3000
             );
-        for (let image of images) {
-            setTimeout(
-                function(){
-                    image.style.transition = "opacity 1s";
-                    image.style.opacity = "1";
-                },counter
-            );
-            counter = counter + 200;
-            }
+        setTimeout(
+            function(){
+                $(".ag-smoke_img").css("z-index", '0');
+                $(".circle-container").removeClass("hide");
+                for (let image of images) {
+                    setTimeout(
+                        function(){
+                            image.style.transition = "opacity 1s";
+                            image.style.opacity = "1";
+                        },counter
+                    );
+                counter = counter + 200;
+                 }
+                        },3200
+                    );
+        
             
     });
     var cartItems = [];
