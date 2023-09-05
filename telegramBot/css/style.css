@@ -247,15 +247,26 @@ body {
 
 .circle-container {
     display: grid;
-    grid-template-columns: repeat(5, 100px); /* 5 columns for 5 circles */
-    gap: 10px;
-    margin-top: 100px;
+    grid-template-columns: repeat(3, 50px); /* 3 columns  */
+    grid-column-gap: 80px;
+    margin-top: 60px;
+    grid-row-gap: 40px;
+
+}
+.counter-container {
+  margin-left:-10px;
 }
 a{
-    margin-top: 100px;
+    margin-top: 50px;
     width: 100px;
     height: 100px;
     text-align: center;
+    user-select: none;
+    margin-left: -30px;
+    font-family:cursive;
+}
+img {
+  user-select: none;
 }
 .cart-item {
     display:block;
@@ -268,10 +279,11 @@ a{
       color:white;
       border-radius:20px;
       text-align:center;
+      user-select: none;
   }
 .circle {
-    width: 100px;
-    height: 100px;
+    width: 50px;
+    height: 50px;
     /* background-color: #ffffff; */
     border-radius: 50%;
     display: flex;
@@ -321,4 +333,29 @@ a{
 #watermelon {
     background-image: url("items-img/watermelon.png");
     background-size: cover;
+}
+
+.shake:hover{
+  animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+  transform: translate3d(0, 0, 0);
+  backface-visibility: hidden;
+  perspective: 1000px;
+}
+
+@keyframes shake {
+  10%, 90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+  
+  20%, 80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%, 50%, 70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%, 60% {
+    transform: translate3d(4px, 0, 0);
+  }
 }

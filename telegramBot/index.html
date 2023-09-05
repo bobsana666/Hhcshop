@@ -10,16 +10,66 @@
 <body>
     <div class="ag-smoke-block">
         <div class="circle-container">
-            <div class="circle" id="ak47" name="ak47"><a>AK-47</a><span class="cart-item">0</span></div>
-            <div class="circle" id="og"><a>OG-KUSH</a><span class="cart-item">0</span></div>
-            <div class="circle" id="strawberry"><a>Ягода</a><span class="cart-item">0</span></div>
-            <div class="circle" id="passion"><a>Маракуя</a><span class="cart-item">0</span></div>
-            <div class="circle" id="choko"><a>Шоко</a><span class="cart-item">0</span></div>
-            <div class="circle" id="cherry"><a>Череша</a><span class="cart-item">0</span></div>
-            <div class="circle" id="forest"><a>Горски Плод</a><span class="cart-item">0</span></div>
-            <div class="circle" id="mango"><a>Манго</a><span class="cart-item">0</span></div>
-            <div class="circle" id="grape"><a>Грозде</a><span class="cart-item">0</span></div>
-            <div class="circle" id="watermelon"><a>Диня</a><span class="cart-item">0</span></div>
+            <div class="circle" id="ak47">
+                <div class="counter-container">
+                    <span class="cart-item">0</span>
+                </div>
+                <a>AK-47</a>
+            </div>
+            <div class="circle" id="og">
+                <div class="counter-container">
+                    <span class="cart-item">0</span>
+                </div>
+                <a>OG-KUSH</a>
+            </div>
+            <div class="circle" id="strawberry">
+                <div class="counter-container">
+                    <span class="cart-item">0</span>
+                </div>
+                <a>Ягода</a>
+            </div>
+            <div class="circle" id="passion">
+                <div class="counter-container">
+                    <span class="cart-item">0</span>
+                </div>
+                <a>Маракуя</a>
+            </div>
+            <div class="circle" id="choko">
+                <div class="counter-container">
+                    <span class="cart-item">0</span>
+                </div>
+                <a>Шоко</a>
+            </div>
+            <div class="circle" id="cherry">
+                <div class="counter-container">
+                    <span class="cart-item">0</span>
+                </div>
+                <a>Череша</a>
+            </div>
+            <div class="circle" id="forest">
+                <div class="counter-container">
+                    <span class="cart-item">0</span>
+                </div>
+                <a>Горски Плод</a>
+            </div>
+            <div class="circle" id="mango">
+                <div class="counter-container">
+                    <span class="cart-item">0</span>
+                </div>
+                <a>Манго</a>
+            </div>
+            <div class="circle" id="grape">
+                <div class="counter-container">
+                    <span class="cart-item">0</span>
+                </div>
+                <a>Грозде</a>
+            </div>
+            <div class="circle" id="watermelon">
+                <div class="counter-container">
+                    <span class="cart-item">0</span>
+                </div>
+                <a>Диня</a>
+            </div>
         </div>
         <picture>
           <source srcset="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-images/images/smoke-pink.webp" type="image/webp">
@@ -48,6 +98,11 @@
     var cartItems = [];
     $(".circle" ).on( "click", function() {
         var item = $(this).attr('id');
+        $(this).addClass('shake');
+        setTimeout(
+            () => { $(this).removeClass('shake') }
+            
+        ,1000);
         var currentQtty = $(this).find('span').text();
         var newQtty = parseInt(currentQtty) + 1;
         $(this).find('span').text(newQtty);
