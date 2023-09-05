@@ -9,6 +9,15 @@
 </head>
 <body>
     <div class="ag-smoke-block">
+        <picture>
+            <source srcset="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-images/images/smoke-pink.webp" type="image/webp">
+            <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-images/images/smoke-pink.png" alt="smoke-pink" class="ag-smoke_img ag-smoke_img__left" width="1920" height="1080">
+          </picture>
+          
+          <picture>
+            <source srcset="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-images/images/smoke-blue.webp" type="image/webp">
+            <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-images/images/smoke-blue.png" alt="smoke-blue" class="ag-smoke_img ag-smoke_img__right" width="1920" height="1080">
+          </picture>
         <div class="circle-container">
             <div class="circle" id="ak47">
                 <div class="counter-container">
@@ -85,6 +94,11 @@
     $( document ).ready(function() {
         const images = document.getElementsByClassName("circle");
         counter = 500;
+        setTimeout(
+                function(){
+                    $(".ag-smoke_img").css("z-index", '0');
+                },2600
+            );
         for (let image of images) {
             setTimeout(
                 function(){
@@ -94,6 +108,7 @@
             );
             counter = counter + 200;
             }
+            
     });
     var cartItems = [];
     $(".circle" ).on( "click", function() {
