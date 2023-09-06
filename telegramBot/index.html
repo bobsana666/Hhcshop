@@ -24,21 +24,21 @@
             <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-images/images/smoke-blue.png" alt="smoke-blue" class="ag-smoke_img ag-smoke_img__right" width="1920" height="1080">
         </picture>
         <div class="stepper-wrapper hide">
-            <div class="stepper-item completed">
-              <div class="step-counter">1</div>
-              <div class="step-name">First</div>
-            </div>
             <div class="stepper-item active">
+              <div class="step-counter">1</div>
+              <div class="step-name">Избор</div>
+            </div>
+            <div class="stepper-item ">
               <div class="step-counter">2</div>
-              <div class="step-name">Second</div>
+              <div class="step-name">Преглед</div>
             </div>
             <div class="stepper-item ">
               <div class="step-counter">3</div>
-              <div class="step-name">Third</div>
+              <div class="step-name">Поръчка</div>
             </div>
             <div class="stepper-item">
               <div class="step-counter">4</div>
-              <div class="step-name">Forth</div>
+              <div class="step-name">Завърши Поръчка</div>
             </div>
         </div>
         <div class="circle-container hide">
@@ -137,6 +137,9 @@
                     );
                 counter = counter + 200;
                  }
+                 $(".stepper-wrapper").removeClass("hide");
+                 $(".stepper-wrapper").addClass("show");
+
                         },3200
                     );
         
