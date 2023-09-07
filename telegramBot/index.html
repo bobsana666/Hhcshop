@@ -103,6 +103,10 @@
                 <a>Диня</a>
             </div>
         </div>
+        <div class="controls">
+            <button type="button" class="btn_back hide">Назад</button>
+            <button type="button" class="btn_next hide">Напред</button>
+        </div>
         <picture class="hide">
           <source srcset="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-images/images/smoke-pink.webp" type="image/webp">
           <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-images/images/smoke-pink.png" alt="smoke-pink" class="ag-smoke_img ag-smoke_img__left" width="1920" height="1080">
@@ -116,6 +120,7 @@
     <script>
     $( document ).ready(function() {
         const images = document.getElementsByClassName("circle");
+        var cartItems = [];
         counter = 500;
         setTimeout(
                 function(){
@@ -139,14 +144,12 @@
                  }
                  $(".stepper-wrapper").removeClass("hide");
                  $(".stepper-wrapper").addClass("show");
-
+                 $(".btn_next").removeClass("hide");
+                 $(".btn_next").addClass("show");
                         },3200
                     );
         
-            
-    });
-    var cartItems = [];
-    $(".circle" ).on( "click", function() {
+                    $(".circle" ).on( "click", function() {
         var item = $(this).attr('id');
         $(this).addClass('shake');
         setTimeout(
@@ -166,10 +169,58 @@
             Name : item, 
             Qtty : newQtty
             });
-        
-console.log(cartItems);
-    });
+        });
 
+        //Next Action
+    $(".btn_next" ).on( "click", function() {
+        if(cartItems.length < 1)
+        {
+            $(".circle").addClass('addItems');
+        setTimeout(
+            () => { $(".circle").removeClass('addItems') }
+            
+        ,1000);
+            return;
+        }
+        stepMover();
+        counter = 0;
+        for (let image of images) {
+                    setTimeout(
+                        function(){
+                            image.style.transition = "opacity 1s";
+                            image.style.opacity = "0";
+                        },counter
+                    );
+                counter += 80;
+                 }
+        $('.btn_back').removeClass('hide');
+    });
+    $('.btn_back').on("click", function() {
+        counter = 0;
+        for (let image of images) {
+                    setTimeout(
+                        function(){
+                            image.style.transition = "opacity 1s";
+                            image.style.opacity = "1";
+                        },counter
+                    );
+                counter += 80;
+                 }
+        $(this).addClass('hide');
+    })
+    
+    function stepMover()
+    {
+         let steps = $('.stepper-item');
+         steps.each(function () {
+    if($(this).hasClass('active')){
+        $(this).removeClass('active').addClass('completed');
+    }
+    
+})
+    }
+});
+    
     </script>
 </body>
 </html>

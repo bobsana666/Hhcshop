@@ -288,6 +288,29 @@ body {
 
 }
 
+button {
+  height: 60px;
+  width: 100px;
+  color: white;
+  background: transparent;
+  border-color: white;
+  border-radius: 20%;
+  font-weight: bold;
+  border-style: solid;
+}
+
+button:active {
+  color: black;
+  background-color: white;
+}
+
+.controls {
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 1;
+}
+
+
 
 .circle-container {
   display: grid;
@@ -296,8 +319,8 @@ body {
   padding: 9px;
   margin: 33px;
   margin-top: 0px;
-  padding-left: 80px;
-  padding-bottom: 100px;
+  padding-left: 55px;
+  padding-bottom: 20px;
   z-index: 1;
 }
 
@@ -499,6 +522,10 @@ input {
     margin-bottom: -40px;
     animation: hideMe 4s;
   }
+}
+
+.addItems {
+  animation: shake 1s;
 }
 
 @keyframes shake {

@@ -57,6 +57,7 @@
 
 .step-name {
   color: white;
+  text-align: center;
 }
 
 .stepper-item.completed .step-counter {
