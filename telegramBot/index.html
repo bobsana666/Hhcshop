@@ -24,7 +24,7 @@
             <img src="https://raw.githubusercontent.com/SochavaAG/example-mycode/master/pens/animation-smoke-images/images/smoke-blue.png" alt="smoke-blue" class="ag-smoke_img ag-smoke_img__right" width="1920" height="1080">
         </picture>
         <div class="stepper-wrapper hide">
-            <div class="stepper-item active">
+            <div class="stepper-item firstStep active">
               <div class="step-counter">1</div>
               <div class="step-name">Избор</div>
             </div>
@@ -171,53 +171,78 @@
             });
         });
 
-        //Next Action
-    $(".btn_next" ).on( "click", function() {
-        if(cartItems.length < 1)
-        {
+            // Function to handle the "Next" button click
+    function handleNextClick() {
+        if (cartItems.length < 1) {
             $(".circle").addClass('addItems');
-        setTimeout(
-            () => { $(".circle").removeClass('addItems') }
-            
-        ,1000);
+            setTimeout(() => { $(".circle").removeClass('addItems') }, 1000);
             return;
         }
-        stepMover();
-        counter = 0;
-        for (let image of images) {
-                    setTimeout(
-                        function(){
-                            image.style.transition = "opacity 1s";
-                            image.style.opacity = "0";
-                        },counter
-                    );
-                counter += 80;
-                 }
-        $('.btn_back').removeClass('hide');
-    });
-    $('.btn_back').on("click", function() {
-        counter = 0;
-        for (let image of images) {
-                    setTimeout(
-                        function(){
-                            image.style.transition = "opacity 1s";
-                            image.style.opacity = "1";
-                        },counter
-                    );
-                counter += 80;
-                 }
-        $(this).addClass('hide');
-    })
-    
-    function stepMover()
-    {
-         let steps = $('.stepper-item');
-         steps.each(function () {
-    if($(this).hasClass('active')){
-        $(this).removeClass('active').addClass('completed');
+        stepMover(true);
+        hideImages();
+        if(!$('.firstStep').hasClass('active')){
+            $('.btn_back').removeClass('hide');
+        }
+        
     }
-    
-})
+
+    // Function to handle the "Back" button click
+    function handleBackClick() {
+        
+        stepMover(false);
+        if($('.firstStep').hasClass('active'))
+        {
+            showImages();
+        $('.btn_back').addClass('hide');
+        }
+
+    }
+
+    // Bind click events to the buttons
+    $(".btn_next").on("click", handleNextClick);
+    $(".btn_back").on("click", handleBackClick);
+
+    // ... (existing code)
+
+    function stepMover(forward) {
+        let steps = $('.stepper-item');
+        steps.each(function (item) {
+            let nextStep = forward ? steps[item + 1] : steps[item - 1];
+            if (forward && $(this).hasClass('active')) {
+                $(this).removeClass('active').addClass('completed');
+                $(nextStep).addClass('active');
+                return false;
+            }
+            else if(!forward && $(this).hasClass('active')){
+                $(this).removeClass('active');
+                $(nextStep).removeClass('completed').addClass('active');
+                return false;   
+            }
+            
+
+        });
+    }
+
+    function hideImages() {
+        counter = 0;
+        for (let image of images) {
+            setTimeout(function () {
+                image.style.transition = "opacity 1s";
+                image.style.opacity = "0";
+            }, counter);
+            counter += 80;
+        }
+    }
+
+    function showImages() {
+        counter = 0;
+        for (let image of images) {
+            setTimeout(function () {
+                image.style.transition = "opacity 1s";
+                image.style.opacity = "1";
+            }, counter);
+            counter += 80;
+        }
     }
 });
     
