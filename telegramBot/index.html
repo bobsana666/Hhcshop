@@ -224,7 +224,15 @@
             if (forward && $(this).hasClass('active')) {
                 $(this).removeClass('active').addClass('completed');
                 if($(".lastStep").hasClass("completed")){
-                    Telegram.WebApp.close();
+                    $.ajax({
+                        type: "POST",
+                        url: 'messageResponser.php',
+                        success: function(data){
+                            Telegram.WebApp.close();
+                        },
+                        error: function (Status, errorThrown) {
+                        }  
+                    });
                 }
                 $(nextStep).addClass('active');
                 return false;
