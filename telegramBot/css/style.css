@@ -528,6 +528,10 @@ input {
   animation: shake 1s;
 }
 
+.forms {
+  z-index:1;
+}
+
 @keyframes shake {
 
   10%,

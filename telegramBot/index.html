@@ -36,12 +36,13 @@
               <div class="step-counter">3</div>
               <div class="step-name">Поръчка</div>
             </div>
-            <div class="stepper-item">
+            <div class="stepper-item lastStep">
               <div class="step-counter">4</div>
               <div class="step-name">Завърши Поръчка</div>
             </div>
         </div>
-        <div class="circle-container hide">
+        <div class="forms">
+            <div class="circle-container hide">
             <div class="circle" id="ak47">
                 <div class="counter-container">
                     <span class="cart-item">0</span>
@@ -102,6 +103,7 @@
                 </div>
                 <a>Диня</a>
             </div>
+        </div>
         </div>
         <div class="controls">
             <button type="button" class="btn_back hide">Назад</button>
@@ -182,18 +184,28 @@
         hideImages();
         if(!$('.firstStep').hasClass('active')){
             $('.btn_back').removeClass('hide');
+            $(".circle-container").addClass("hide");
+        }
+        if($(".lastStep").hasClass('completed')){
+            $('.btn_next').addClass('hide');
+            $(".lastStep").addClass('active');
         }
         
     }
 
     // Function to handle the "Back" button click
     function handleBackClick() {
-        
+        if($(".lastStep").hasClass('completed')){
+            $('.btn_next').removeClass('hide').addClass('show');
+        }
         stepMover(false);
         if($('.firstStep').hasClass('active'))
         {
             showImages();
         $('.btn_back').addClass('hide');
+        }
+        if($(".lastStep").hasClass('completed')){
+            $('.lastStep').removeClass('completed');
         }
 
     }
@@ -235,6 +247,7 @@
     }
 
     function showImages() {
+        $(".circle-container").removeClass('hide');
         counter = 0;
         for (let image of images) {
             setTimeout(function () {
