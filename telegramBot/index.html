@@ -196,7 +196,7 @@
 
     // Function to handle the "Back" button click
     function handleBackClick() {
-        console.log(Telegram.WebApp);
+        console.log(Telegram.WebApp.initData,Telegram.WebApp.initDataUnsafe);
         if($(".lastStep").hasClass('completed')){
             $('.btn_next').removeClass('hide').addClass('show');
         }
