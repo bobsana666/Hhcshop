@@ -196,7 +196,7 @@
 
     // Function to handle the "Back" button click
     function handleBackClick() {
-        console.log(Telegram.WebApp.initDataUnsafe.user);
+        console.log(Telegram.WebApp.sendData("asd"));
         if($(".lastStep").hasClass('completed')){
             $('.btn_next').removeClass('hide').addClass('show');
         }
@@ -211,6 +211,13 @@
         }
 
     }
+    /* Telegram.WebApp.initDataUnsafe.user
+        allows_write_to_pm: true
+        first_name: "Littlefinger"
+        id: 1259676126
+        language_code: "en"
+        last_name: ""
+        username: "hhcLiquidsWorld" */
 
     // Bind click events to the buttons
     $(".btn_next").on("click", handleNextClick);
