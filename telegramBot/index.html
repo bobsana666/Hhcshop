@@ -105,6 +105,11 @@
                 <a>Диня</a>
             </div>
         </div>
+        <div class="cart">
+            <ul class="items">
+
+            </ul>
+        </div>
         </div>
         <div class="controls">
             <button type="button" class="btn_back hide">Назад</button>
@@ -185,7 +190,16 @@
         hideImages();
         if(!$('.firstStep').hasClass('active')){
             $('.btn_back').removeClass('hide');
-            $(".circle-container").addClass("hide");
+            setTimeout(() => { $(".circle-container").addClass("hide"); }, 1500);
+            setTimeout(() => { 
+                if(cartItems.length >6){
+                    $('.items').addClass('columns');
+                }
+                $.each(cartItems,function(key){
+            $('.items').html($('.items').html()+"<li>"+cartItems[key].Name.toUpperCase()+ "  -  "+cartItems[key].Qtty+"</li>");
+            });
+             }, 1550);
+           
         }
         if($(".lastStep").hasClass('completed')){
             $('.btn_next').addClass('hide');
@@ -256,6 +270,8 @@
     }
 
     function hideImages() {
+        $(".items").html('');
+        $(".cart").removeClass('hide');
         counter = 0;
         for (let image of images) {
             setTimeout(function () {
@@ -268,6 +284,7 @@
 
     function showImages() {
         $(".circle-container").removeClass('hide');
+        $(".cart").addClass('hide');
         counter = 0;
         for (let image of images) {
             setTimeout(function () {

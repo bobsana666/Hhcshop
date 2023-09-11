@@ -528,9 +528,34 @@ input {
   animation: shake 1s;
 }
 
+ul.columns{
+  columns: 2;
+}
 .forms {
   z-index:1;
 }
+.cart{
+  text-align: center;
+
+}
+.items{
+  text-align: justify;
+  display: inline-block;
+  list-style-type: none;
+}
+
+ul.columns > li{
+  text-align: left;
+  padding-left: 40px;
+  display: inline-block;
+}
+
+li{
+  margin: 10px 0;
+  color: white;
+}
+
+
 
 @keyframes shake {
 
